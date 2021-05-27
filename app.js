@@ -15,9 +15,6 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
-app.get('/download', function(req, res) {
-    res.download(__dirname + '/AdityaCV.pdf');
-})
 
 http.listen(port, () => {
     console.log("listening to port..");
